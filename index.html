@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#a33f2f" />
+  <title>神戶・楓紅色的秋日旅行</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="回到頂端">
+      <span class="brand-mark">楓</span>
+      <span>神戶秋日手帖</span>
+    </a>
+    <nav aria-label="主要導覽">
+      <a href="#journey">每日行程</a>
+      <a href="bridge.html">上橋體驗</a>
+      <a href="#stays">住宿</a>
+      <a href="#notes">旅行備忘</a>
+    </nav>
+    <button class="menu-button" aria-label="開啟選單" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero hero-rendered">
+      <div class="hero-copy">
+        <p class="eyebrow">OUR LITTLE AUTUMN ADVENTURE</p>
+        <h1>神戶，<br><em>楓紅色</em>的秋日</h1>
+        <p class="hero-subtitle">從港都的風，到有馬的暖湯。<br>和最喜歡的夥伴，一起慢慢走。</p>
+        <div class="trip-meta">
+          <span>📅 2026.10.24 — 11.01</span>
+          <span>🧳 9 DAYS</span>
+        </div>
+        <a href="#journey" class="primary-button">翻開旅行手帖 <span>↓</span></a>
+      </div>
+
+      <div class="hero-art maple-theme" aria-hidden="true">
+        <span class="scribble-note note-one">KOBE AUTUMN</span>
+        <span class="scribble-note note-two">海風染上楓紅</span>
+        <span class="maple-leaf leaf-a">🍁</span>
+        <span class="maple-leaf leaf-b">🍂</span>
+        <span class="maple-leaf leaf-c">🍁</span>
+        <svg class="hero-illustration" viewBox="0 0 690 590" role="img" aria-hidden="true">
+          <defs>
+            <filter id="wobble"><feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="2" seed="4" result="noise"/><feDisplacementMap in="SourceGraphic" in2="noise" scale="2"/></filter>
+            <linearGradient id="autumnHill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c7b56b"/><stop offset="1" stop-color="#8ea36e"/></linearGradient>
+            <linearGradient id="bearGold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f3c862"/><stop offset="1" stop-color="#d89c35"/></linearGradient>
+          </defs>
+          <g class="clouds" fill="#fffdf4" stroke="#453d2d" stroke-width="3">
+            <path d="M35 152c16-27 43-29 59-9 10-27 48-25 57 5 30-6 44 30 20 45H37c-23-8-22-33-2-41Z"/>
+            <path d="M474 79c15-25 43-22 54 0 18-18 49-5 45 21 23 2 29 31 8 40H467c-23-13-17-46 7-61Z"/>
+          </g>
+          <g class="landscape" fill="none" stroke="#453d2d" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M23 381c85-68 155-77 239-35 95 47 191 31 375-75" stroke="url(#autumnHill)" stroke-width="22" opacity=".72"/>
+            <path d="M18 430c122-58 234-40 333 1 95 40 180 29 309-30" stroke="#a6b68b" stroke-width="38" opacity=".72"/>
+            <!-- Akashi Kaikyo Bridge -->
+            <path d="M20 365h222m-195 0v-73m151 73v-73M47 307c42 42 108 42 151 0M47 292v-18m151 18v-18" stroke="#5f7780" stroke-width="3" opacity=".82"/>
+            <path d="M30 334h200" stroke="#5f7780" stroke-width="2" opacity=".7"/>
+            <!-- Kobe Port Tower -->
+            <path d="M505 227h33l-7 42 14 111h-48l15-111Z" fill="#c85943" stroke-width="4"/>
+            <path d="M508 250h27m-31 36h36m-40 27h43m-46 31h49M513 269l20 111m0-111-20 111" stroke-width="2.3"/>
+            <path d="M501 227h41l-8-17h-25Z" fill="#c85943" stroke-width="3"/>
+            <!-- Ferris wheel -->
+            <circle cx="596" cy="318" r="51" stroke="#567c7b" stroke-width="4"/>
+            <circle cx="596" cy="318" r="6" fill="#efbf3d" stroke-width="3"/>
+            <path d="M596 267v102m-51-51h102m-87-36 72 72m0-72-72 72" stroke="#567c7b" stroke-width="2"/>
+            <g fill="#efbf3d" stroke-width="2"><circle cx="596" cy="265" r="6"/><circle cx="649" cy="318" r="6"/><circle cx="596" cy="371" r="6"/><circle cx="543" cy="318" r="6"/></g>
+            <path d="M548 380h97" stroke-width="4"/>
+          </g>
+          <!-- classic Pooh silhouette: small ears, projecting muzzle, short red shirt and round belly -->
+          <g class="bear bear-new" filter="url(#wobble)" stroke="#493820" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- small ears tucked high on the head -->
+            <path d="M294 190c-17-7-35 3-37 21-2 15 9 27 24 28" fill="#e9b343"/>
+            <path d="M398 190c17-8 36 2 38 20 2 15-9 27-24 29" fill="#e9b343"/>
+            <path d="M270 221c2-48 39-77 79-78 45-1 83 31 85 78 2 49-31 89-82 91-51 2-84-36-82-91Z" fill="#edb744"/>
+            <!-- soft forehead and cheek wash -->
+            <path d="M285 214c10-38 39-57 69-57 34 0 62 23 68 58 6 36-13 60-38 73-50 26-108-17-99-74Z" fill="#f2c45d" opacity=".46" stroke="none"/>
+            <!-- Pooh's projecting muzzle, wider below the nose -->
+            <path d="M312 248c6-22 26-31 43-29 25 2 43 21 39 44-3 22-21 36-43 35-26-1-45-23-39-50Z" fill="#f4ca67" stroke-width="2.4"/>
+            <ellipse cx="350" cy="248" rx="12" ry="8.5" fill="#493820" stroke="none"/>
+            <path d="M350 257c0 12-7 20-18 22m18-22c1 12 8 19 20 20" fill="none" stroke-width="2.7"/>
+            <ellipse cx="322" cy="219" rx="4.8" ry="7.5" fill="#493820" stroke="none"/>
+            <ellipse cx="379" cy="218" rx="4.8" ry="7.5" fill="#493820" stroke="none"/>
+            <path d="M307 197c8-7 17-8 25-5m37 0c8-4 17-2 24 5" fill="none" stroke-width="2.4"/>
+            <!-- plump pear-shaped body -->
+            <path d="M288 303c24-12 100-15 126 1 26 16 42 61 40 105-2 50-34 84-99 85-64 1-101-32-101-83 0-45 11-94 34-108Z" fill="#eab040"/>
+            <path d="M270 379c-2 69 30 101 85 103 56 2 85-30 88-99-18 24-50 36-87 36-36 0-68-13-86-40Z" fill="#efbd53" opacity=".72" stroke="none"/>
+            <!-- iconic very short red shirt, belly left uncovered -->
+            <path d="M283 300c29-15 103-15 134 2 14 8 23 27 28 49-48 18-132 19-179-1 4-22 8-42 17-50Z" fill="#c74836"/>
+            <path d="M267 349c44 20 133 20 178 2" fill="none" stroke="#8f3329" stroke-width="2.4"/>
+            <!-- relaxed left paw -->
+            <path d="M278 308c-25 3-45 25-49 57-4 30 4 51 18 49 15-2 19-31 22-53 5-18 13-31 23-40" fill="#eab040"/>
+            <!-- raised waving paw -->
+            <path d="M416 306c21-24 34-50 38-82 2-17 7-27 18-26 12 1 15 14 14 31 0 13-4 29-9 43 10-8 22-9 28-1 9 12-7 34-21 47-15 15-33 28-50 39" fill="#eab040"/>
+            <path d="M457 225c8 3 19 3 27-2m-9 51c4 4 8 9 9 14" fill="none" stroke-width="2.3"/>
+            <!-- characteristic splayed feet -->
+            <path d="M304 454c-27 10-54 32-50 51 5 23 48 11 81-18 8-7 12-17 9-29" fill="#eab040"/>
+            <path d="M402 453c29 9 56 30 53 50-4 24-49 12-83-16-8-7-13-17-10-29" fill="#eab040"/>
+            <path d="M309 474c20 13 67 13 88 0" fill="none" stroke="#cd8d2c" stroke-width="2"/>
+          </g>
+          <g class="honey" stroke="#453d2d" stroke-width="3" stroke-linecap="round">
+            <path d="M113 443h73l-9 66c-2 15-51 15-54 0Z" fill="#d9992d"/>
+            <path d="M107 443c0-14 85-14 85 0s-85 14-85 0Z" fill="#f3c94e"/>
+            <path d="M127 462c14 7 33 7 47 0" fill="none" opacity=".5"/>
+            <text x="123" y="492" font-size="17" fill="#453d2d" stroke="none" font-family="serif">HUNNY</text>
+          </g>
+          <g fill="#f2c94c" stroke="#453d2d" stroke-width="2">
+            <path d="M93 248l6 13 14 2-10 10 2 15-12-7-13 7 3-15-11-10 15-2Z"/>
+            <path d="M610 196l4 9 10 1-8 7 2 10-9-5-9 5 2-10-7-7 10-1Z"/>
+          </g>
+          <g class="svg-leaves" fill="#c65a3c" stroke="#493c2a" stroke-width="2">
+            <path d="M79 208c20 1 26-11 30-27 7 12 14 15 27 12-4 14-10 22-24 25l5 18-7 2-5-18c-12 7-20 3-26-12Z"/>
+            <path d="M615 187c13-1 19-9 21-21 6 9 12 11 22 8-2 11-8 17-18 20l4 13-6 2-4-13c-9 5-15 2-19-9Z" fill="#d88f36"/>
+            <path d="M565 464c15 0 21-9 24-22 6 10 12 13 23 10-3 12-9 18-20 21l4 15-6 2-4-15c-10 5-16 2-21-11Z" fill="#b24c3b"/>
+          </g>
+          <g class="autumn-branch" stroke="#493820" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M652 40c-75 69-139 125-222 190-68 53-135 93-225 122" fill="none" stroke-width="9" opacity=".9"/>
+            <path d="M557 126c-12-44-3-70 17-91M514 162c-43-4-70-20-87-44M463 204c-8-40 2-67 25-88M393 251c-42-1-70-14-94-38M322 298c-7-31-1-55 16-76" fill="none" stroke-width="5"/>
+            <g fill="#a43f31" stroke-width="2.5">
+              <path d="M571 42c13 21 31 24 51 18-7 18-4 31 10 45-20-2-32 5-40 23-9-18-21-25-41-21 13-16 15-30 7-48Z"/>
+              <path d="M420 91c10 18 24 22 43 18-7 16-4 28 9 39-17-1-29 5-36 21-8-16-18-23-36-20 11-14 13-27 6-42Z" fill="#c75b38"/>
+              <path d="M479 111c11 19 27 23 46 18-7 17-4 30 10 42-19-1-31 6-39 22-8-17-20-23-39-20 12-15 14-28 7-45Z" fill="#d98434"/>
+              <path d="M485 172c10 18 25 21 43 17-7 16-4 28 9 40-18-1-29 5-37 21-8-16-18-22-36-19 11-14 13-27 6-42Z"/>
+              <path d="M294 185c10 17 24 20 41 16-6 15-3 27 9 38-17-1-28 5-35 20-7-15-18-21-34-18 10-14 12-26 5-40Z" fill="#d98434"/>
+              <path d="M337 220c12 20 29 24 49 19-8 18-4 32 10 45-20-2-33 6-41 23-9-18-21-25-41-21 12-16 14-30 7-47Z" fill="#b94f39"/>
+              <path d="M205 319c9 15 22 18 38 15-6 14-3 25 8 35-16-1-26 5-33 18-7-14-16-19-32-17 10-12 11-23 5-37Z" fill="#c75b38"/>
+            </g>
+          </g>
+          <path d="M35 527c118 17 227 13 323 5 110-9 204-10 298 5" fill="none" stroke="#453d2d" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="quote-strip" aria-label="旅行小語">
+      <span class="bee">🍁</span>
+      <p>山染楓紅，海映秋光，正是出發的季節。</p>
+      <span class="bee">神戶・九日</span>
+    </section>
+
+    <section class="journey section" id="journey">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE JOURNEY</p>
+          <h2>九天八夜，一頁一冒險</h2>
+        </div>
+        <p>點選日期，看看今天要去哪裡。</p>
+      </div>
+
+      <div class="date-tabs" role="tablist" aria-label="選擇日期"></div>
+      <article class="day-card" id="day-card" aria-live="polite"></article>
+    </section>
+
+    <section class="stays section" id="stays">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">WHERE WE DREAM</p>
+          <h2>今晚，住進旅途裡</h2>
+        </div>
+      </div>
+      <div class="stay-grid">
+        <article class="stay-card stay-kobe">
+          <div class="stay-doodle">🏙️</div>
+          <div><span class="stay-number">01</span><p class="stay-dates">10/24 — 10/26</p><h3>Hotel Monterey Kobe</h3><p>三宮站｜神戶市區散步的舒適起點</p></div>
+        </article>
+        <article class="stay-card stay-arima">
+          <div class="stay-doodle">♨️</div>
+          <div><span class="stay-number">02</span><p class="stay-dates">有馬之夜</p><h3>月光園 鴻朧館</h3><p>有馬溫泉｜把山裡的秋色泡進暖湯</p></div>
+        </article>
+        <article class="stay-card stay-awaji">
+          <div class="stay-doodle">🌊</div>
+          <div><span class="stay-number">03</span><p class="stay-dates">淡路島</p><h3>淡路島酒店</h3><p>海島留宿｜在瀨戶內海的晚風中休息</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="notes section" id="notes">
+      <div class="notes-illustration" aria-hidden="true">
+        <div class="map-paper"><span>神戶</span><i>→</i><span>有馬</span><i>→</i><span>姬路</span><i>→</i><span>淡路島</span></div>
+      </div>
+      <div class="notes-copy">
+        <p class="eyebrow">LITTLE REMINDERS</p>
+        <h2>出發前的小小備忘</h2>
+        <div class="checklist">
+          <label><input type="checkbox" data-check="passport"><span>護照、駕照日文譯本</span></label>
+          <label><input type="checkbox" data-check="tickets"><span>機票與住宿憑證</span></label>
+          <label><input type="checkbox" data-check="rental"><span>租車預約確認</span></label>
+          <label><input type="checkbox" data-check="usj"><span>環球影城門票</span></label>
+          <label><input type="checkbox" data-check="clothes"><span>山區保暖衣物與好走的鞋</span></label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bee">🍁</div>
+    <p>Meet me where the maples turn red.</p>
+    <small>神戶秋日手帖・私人旅行規劃頁</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
