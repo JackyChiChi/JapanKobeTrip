@@ -54,7 +54,7 @@ const days = [
     intro: "在神戶三田暢貨中心購物後北上宮津，為隔日的天橋立行程預留移動時間。",
     events: [
       { time: "09:00–09:35", title: "有馬出發前往神戶三田", note: "提早抵達可先停車、喝咖啡，等待商場開門", transfer: "車程約 30–35 分鐘" },
-      { time: "10:00–14:30", title: "Kobe Sanda Premium Outlets", note: "包含購物、午餐與退稅時間", map: "https://maps.app.goo.gl/rx1e5abEGMyk9eZS6", mapcode: "155 068 670*20" },
+      { time: "10:00–14:30", title: "Kobe Sanda Premium Outlets", note: "包含購物、午餐與退稅時間", map: "https://maps.app.goo.gl/rx1e5abEGMyk9eZS6", mapcode: "155 068 670*20", floorMap: "https://platinumaps.jp/d/premiumoutlets-kobesanda?culture=en&floor=1F" },
       { time: "14:30–16:20", title: "北上宮津・飯店入住", note: "途中可安排一次休息，建議不要晚於 15:00 離開 Outlet", transfer: "高速公路車程約 1 小時 40–50 分鐘" }
     ],
     stay: { name: "Mercure Kyoto Miyazu Resort & Spa", note: "京都宮津美居溫泉度假酒店", map: "https://maps.app.goo.gl/sYEwxo9ngfEGUXnB7", mapcode: "197 298 043*63" },
@@ -187,6 +187,15 @@ function eventActions(event) {
   return actions ? `<div class="action-row">${actions}</div>` : "";
 }
 
+function floorMapLink(url) {
+  if (!url) return "";
+  return `<a class="floor-map-link" href="${escapeHtml(url)}" target="_blank" rel="noopener">
+    <span class="floor-map-icon" aria-hidden="true">▦</span>
+    <span><small>OUTLET FLOOR GUIDE</small><strong>開啟 1F 數位樓層地圖</strong></span>
+    <b aria-hidden="true">↗</b>
+  </a>`;
+}
+
 function infoCards(day) {
   const cards = [];
   if (day.stay) {
@@ -225,7 +234,7 @@ function renderDay(index) {
       <p class="detail-kicker">TODAY'S ROUTE</p>
       <ol class="timeline">${day.events.map(event => `<li>
         <time>${escapeHtml(event.time)}</time><i></i>
-        <div class="event-content"><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.note)}</small>${event.transfer ? `<span class="transfer-chip"><b>移動</b>${escapeHtml(event.transfer)}</span>` : ""}${eventActions(event)}${parkingList(event.parking)}</div>
+        <div class="event-content"><strong>${escapeHtml(event.title)}</strong><small>${escapeHtml(event.note)}</small>${event.transfer ? `<span class="transfer-chip"><b>移動</b>${escapeHtml(event.transfer)}</span>` : ""}${floorMapLink(event.floorMap)}${eventActions(event)}${parkingList(event.parking)}</div>
       </li>`).join("")}</ol>
       ${index === 7 ? `<a class="bridge-day-link" href="bridge.html"><span>BRIDGE WORLD</span><strong>查看上橋流程與注意事項</strong><b>→</b></a>` : ""}
       ${infoCards(day)}
