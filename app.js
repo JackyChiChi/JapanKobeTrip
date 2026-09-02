@@ -11,16 +11,22 @@ const days = [
     meals: [{ type: "晚餐", name: "とんかつ四郎吉", map: "https://maps.app.goo.gl/Qr4Jj6CtEwVCLheY7" }]
   },
   {
-    date: "10/25", week: "日", region: "神戶市區", title: "神社、異人館與摩耶夜景",
-    intro: "上午取車，從神戶山側一路玩到日本三大夜景之一的掬星台。",
+    date: "10/25", week: "日", region: "神戶市區・港灣", title: "神社、港灣與摩耶夜景",
+    intro: "上午參拜與取車，中午遊逛 Harborland、美利堅公園，傍晚上摩耶山等待神戶夜景。",
     events: [
       { time: "09:00–09:45", title: "生田神社", note: "參拜並在境內散步約 45 分鐘", map: "https://maps.app.goo.gl/hCCLhNhbg8y9DeXB9", transfer: "飯店步行約 5–10 分鐘" },
       { time: "10:00–10:30", title: "TOYOTA Rent a Car 三宮站前店", note: "取車・確認導航、ETC 與還車方式", map: "https://maps.app.goo.gl/pgWa97hiqfVvJRyw7", transfer: "由生田神社步行約 10 分鐘" },
-      { time: "10:45–13:15", title: "神戶布引香草園", note: "10:00 開園；包含纜車來回、園區散步與簡單午餐", transfer: "取車處至新神戶停車約 10 分鐘＋步行轉纜車" },
-      { time: "13:30–15:45", title: "北野異人館街・北野天滿神社", note: "沿北野坂散步，挑選 2–3 間異人館參觀", transfer: "新神戶周邊車程約 5–10 分鐘" },
       {
-        time: "16:15–19:15", title: "摩耶山掬星台", note: "預留纜車轉乘與候車；約 17:15 後等待夜景亮起",
-        transfer: "北野至摩耶纜車站車程約 20 分鐘＋上山約 25 分鐘",
+        time: "10:45–13:15", title: "KOBE HARBORLAND umie", note: "購物、午餐與欣賞港景", map: "https://maps.app.goo.gl/A2cRDAye8tzvK5UL6", transfer: "三宮取車處至港區約 10–15 分鐘",
+        parking: [{ name: "umie 地下停車場", map: "https://maps.app.goo.gl/o6Jj519nsYJi2sGe6", mapcode: "12 337 185*27" }]
+      },
+      {
+        time: "13:25–15:10", title: "美利堅公園", note: "神戶塔、BE KOBE 與海港散步", map: "https://maps.app.goo.gl/7SbyzZRu13LMjDW58", transfer: "由 Harborland 步行約 10 分鐘",
+        parking: [{ name: "Times Meriken Park Parking Lot", map: "https://maps.app.goo.gl/n33cRL7q3rNtk7h36", mapcode: "12 337 356*85" }]
+      },
+      {
+        time: "15:45–19:00", title: "摩耶山掬星台", note: "預留纜車轉乘與候車；約 17:15 後等待夜景亮起",
+        transfer: "港區至摩耶纜車站車程約 25 分鐘＋上山約 25 分鐘",
         parking: [
           { name: "COIN PARK 五毛通４丁目", map: "https://maps.app.goo.gl/DiFWEd5iKKqhz7b48", mapcode: "12 461 821*58" },
           { name: "タイムパーキング 五毛通４丁目", map: "https://maps.app.goo.gl/xBFM7cV5eQD2njHQ7", mapcode: "12 461 731*05" },
@@ -137,18 +143,12 @@ const days = [
   },
   {
     date: "11/01", week: "日", region: "神戶・回程", title: "帶著楓色回家",
-    intro: "09:00 退房後在神戶港安排半日散步，14:30 前還車，約 15:30 抵達機場。",
+    intro: "09:00 退房後前往布引香草園，接著散步北野異人館；14:45 前還車，約 15:30 抵達機場。",
     events: [
-      {
-        time: "09:15–11:30", title: "KOBE HARBORLAND umie", note: "回程前購物、用餐與欣賞港景", map: "https://maps.app.goo.gl/A2cRDAye8tzvK5UL6", transfer: "飯店出發車程約 10–15 分鐘",
-        parking: [{ name: "umie 地下停車場", map: "https://maps.app.goo.gl/o6Jj519nsYJi2sGe6", mapcode: "12 337 185*27" }]
-      },
-      {
-        time: "11:40–12:40", title: "美利堅公園", note: "神戶塔與海港散步", map: "https://maps.app.goo.gl/7SbyzZRu13LMjDW58", transfer: "由 Harborland 步行約 10 分鐘",
-        parking: [{ name: "Times Meriken Park Parking Lot", map: "https://maps.app.goo.gl/n33cRL7q3rNtk7h36", mapcode: "12 337 356*85" }]
-      },
-      { time: "12:40–13:50", title: "午餐與最後採買", note: "14:00 左右取車離開港區" },
-      { time: "14:15–14:45", title: "TOYOTA Rent a Car 三宮", note: "加滿油後依預約方式完成還車", map: "https://maps.app.goo.gl/LM7M631mpoJcxMLp9", mapcode: "12 398 049*82", transfer: "港區車程約 10–15 分鐘" },
+      { time: "09:00–09:25", title: "退房・前往新神戶", note: "行李留在車上，先到纜車山麓站周邊停車", transfer: "三宮飯店至新神戶車程約 10–15 分鐘＋停車步行" },
+      { time: "09:30–12:00", title: "神戶布引香草園", note: "搭首班纜車上山；園區 10:00 開放，包含纜車來回與散步", transfer: "纜車約每 30 秒一班，單程約 10 分鐘" },
+      { time: "12:15–14:00", title: "北野異人館街・北野天滿神社", note: "挑選 1–2 間異人館，並在北野周邊簡單午餐", transfer: "新神戶周邊車程約 5–10 分鐘" },
+      { time: "14:15–14:45", title: "TOYOTA Rent a Car 三宮", note: "加滿油後依預約方式完成還車", map: "https://maps.app.goo.gl/LM7M631mpoJcxMLp9", mapcode: "12 398 049*82", transfer: "北野至還車處車程約 10 分鐘" },
       { time: "15:00–15:30", title: "前往神戶機場", note: "由三宮搭 Port Liner，預留轉乘與步行時間", transfer: "電車約 20 分鐘" },
       { time: "19:00", title: "長榮航空起飛", note: "神戶機場 UKB 第二航廈 → 桃園機場第二航廈" },
       { time: "21:15", title: "抵達台北", note: "平安回家" }
